@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexander\\Source\\Repos\\FinalProjectCBSExam\\FinalProjectCBSExam\\FinalProjectCBSExam.csproj": {}
+    "/Users/vincentolivers/Desktop/CBS E-Business/PROGRAMMING_APPLICATION_DESIGN/Exercises/CBSProgrammingExam/FinalProjectCBSExam/FinalProjectCBSExam/FinalProjectCBSExam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexander\\Source\\Repos\\FinalProjectCBSExam\\FinalProjectCBSExam\\FinalProjectCBSExam.csproj": {
+    "/Users/vincentolivers/Desktop/CBS E-Business/PROGRAMMING_APPLICATION_DESIGN/Exercises/CBSProgrammingExam/FinalProjectCBSExam/FinalProjectCBSExam/FinalProjectCBSExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Source\\Repos\\FinalProjectCBSExam\\FinalProjectCBSExam\\FinalProjectCBSExam.csproj",
+        "projectUniqueName": "/Users/vincentolivers/Desktop/CBS E-Business/PROGRAMMING_APPLICATION_DESIGN/Exercises/CBSProgrammingExam/FinalProjectCBSExam/FinalProjectCBSExam/FinalProjectCBSExam.csproj",
         "projectName": "FinalProjectCBSExam",
-        "projectPath": "C:\\Users\\Alexander\\Source\\Repos\\FinalProjectCBSExam\\FinalProjectCBSExam\\FinalProjectCBSExam.csproj",
-        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexander\\Source\\Repos\\FinalProjectCBSExam\\FinalProjectCBSExam\\obj\\",
+        "projectPath": "/Users/vincentolivers/Desktop/CBS E-Business/PROGRAMMING_APPLICATION_DESIGN/Exercises/CBSProgrammingExam/FinalProjectCBSExam/FinalProjectCBSExam/FinalProjectCBSExam.csproj",
+        "packagesPath": "/Users/vincentolivers/.nuget/packages/",
+        "outputPath": "/Users/vincentolivers/Desktop/CBS E-Business/PROGRAMMING_APPLICATION_DESIGN/Exercises/CBSProgrammingExam/FinalProjectCBSExam/FinalProjectCBSExam/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/vincentolivers/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
