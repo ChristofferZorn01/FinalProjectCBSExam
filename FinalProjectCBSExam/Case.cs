@@ -9,7 +9,7 @@ namespace FinalProjectCBSExam
         int ClientId { get; set; }
         ESpecialization CaseType { get; set; }
         DateTime StartDate { get; set; }
-        double TotalCharges { get; set; }
+        public double totalcharges;
         int LawyerId { get; set; }
 
         public Case(int caseId, int clientId, int lawyerId, ESpecialization caseType, DateTime startDate, double totalCharges)
@@ -20,6 +20,23 @@ namespace FinalProjectCBSExam
             StartDate = startDate;
             TotalCharges = totalCharges;
             LawyerId = lawyerId;
+        }
+
+        public double TotalCharges
+        {
+            get
+            {
+                return totalcharges;
+            }
+            set
+            {
+                if (value < 200)
+                {
+                    Console.WriteLine("*** ERROR | Charged amount must be greater than 200. Please try again: ");
+                    totalcharges = int.Parse(Console.ReadLine());
+                }
+                totalcharges = value;
+            }
         }
 
         public override string ToString()

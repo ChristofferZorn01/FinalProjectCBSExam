@@ -3,7 +3,8 @@ namespace FinalProjectCBSExam
 {
     public enum ESpecialization
     {
-        Coporate = 0, FamilyCase = 1, CriminalCase = 2
+        Corporate = 0, FamilyCase = 1, CriminalCase = 2,
+
     }
 
     public enum EMeetingRoom

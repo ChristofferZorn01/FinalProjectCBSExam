@@ -68,6 +68,11 @@ namespace FinalProjectCBSExam
             // Find out the exception handling for invalid enums
             Console.WriteLine("Case type (Corporate = 0 | Family = 1 | Criminal = 2): ");
             caseType = (ESpecialization)int.Parse(Console.ReadLine());
+            if (caseType != ESpecialization.Corporate && caseType != ESpecialization.CriminalCase && caseType != ESpecialization.FamilyCase)
+            {
+                Console.WriteLine("Invalid. Please try again");
+                caseType = (ESpecialization)int.Parse(Console.ReadLine());
+            }
 
             Console.WriteLine("Start date [DD-MM-YYYY]:");
             try
