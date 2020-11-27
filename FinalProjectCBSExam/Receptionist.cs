@@ -110,15 +110,57 @@ namespace FinalProjectCBSExam
 
             Console.WriteLine("\n*** ENTER APPOINTMENT DATA BELOW ***\n");
             Console.WriteLine("Appointment ID: ");
-            appId = int.Parse(Console.ReadLine());
+            try
+            {
+                appId = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer. \nPlease try again ");
+                appId = int.Parse(Console.ReadLine());
+            }
             Console.WriteLine("Client ID: ");
-            clientId = int.Parse(Console.ReadLine());
+            try
+            {
+                clientId = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer. \nPlease try again ");
+                clientId = int.Parse(Console.ReadLine());
+            }
             Console.WriteLine("Lawyer ID: ");
-            lawyerId = int.Parse(Console.ReadLine());
+            try
+            {
+                lawyerId = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer. \nPlease try again: ");
+                lawyerId = int.Parse(Console.ReadLine());
+            }
             Console.WriteLine("Appointment date and time [DD-MM-YYYY HH-mm]: ");
-            date = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy HH:mm", null);
+
+            try
+            {
+                date = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy HH:mm", null);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be in the right format [DD-MM-YYYY]. \nPlease try again: ");
+                date = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy HH:mm", null);
+            }
+
             Console.WriteLine("Meeting room (Aquarium = 1 | Cube = 2 | Cave = 3): ");
-            meetingRoom = (EMeetingRoom)int.Parse(Console.ReadLine());
+            try
+            {
+                meetingRoom = (EMeetingRoom)int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer.\nPlease try again ");
+                meetingRoom = (EMeetingRoom)int.Parse(Console.ReadLine());
+            }
 
             Appointment newAppointment = new Appointment(appId, clientId, lawyerId, date, meetingRoom);
             appointmentList.Add(newAppointment);
