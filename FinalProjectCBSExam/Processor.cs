@@ -15,7 +15,6 @@ namespace FinalProjectCBSExam
 
         // Lists
         List<Client> clientList = new List<Client>();
-        List<Appointment> appointmentList = new List<Appointment>();
 
         // Starting Screen with user prompts
         public void StartScreen()
@@ -75,46 +74,6 @@ namespace FinalProjectCBSExam
             }
         }
 
-        // Method to add a new client.
-        public void AddNewClient()
-        {
-            int clientId;
-            string firstName;
-            string lastName;
-            ESpecialization caseType;
-            string street;
-            int zipCode;
-            string city;
-
-            Console.WriteLine("\n*** ENTER CLIENT DATA BELOW ***\n");
-            Console.WriteLine("Client ID: ");
-            clientId = int.Parse(Console.ReadLine());
-            Console.WriteLine("First name: ");
-            firstName = Console.ReadLine();
-            Console.WriteLine("Last name: ");
-            lastName = Console.ReadLine();
-            Console.WriteLine("Case type (Corporate = 0 | Family = 1 | Criminal = 2): ");
-            caseType = (ESpecialization)int.Parse(Console.ReadLine());
-            Console.WriteLine("Street address: ");
-            street = Console.ReadLine();
-            Console.WriteLine("Zip code: ");
-            zipCode = int.Parse(Console.ReadLine());
-            Console.WriteLine("City: ");
-            city = Console.ReadLine();
-
-            Client newClient = new Client(clientId, firstName, lastName, caseType, street, zipCode, city);
-            clientList.Add(newClient);
-            Console.WriteLine("\n*** CLIENT SUCCESSFULLY ADDED TO THE SYSTEM ***\n");
-        }
-
-        public void ListOfAppointments()
-        {
-            foreach (object appointment in appointmentList)
-            {
-                Console.WriteLine(appointment);
-            }
-            Console.WriteLine($"\nThere is/are {appointmentList.Count} registered appointsment(s)\n");
-        }
 
         public void AppProcessor()
         {
@@ -137,27 +96,28 @@ namespace FinalProjectCBSExam
                                 newLawyer.ListAllCases();
                                 break;
                             case 3:
-                                ListOfAppointments();
+                                newLawyer.ListOfAppointments();
                                 break;
                         }
                     }
                 }
-            } /*
+            }
             else if (userInput == 2)
             {
                 if (LoginSystem() == true)
                 {
                     while (featureChoice != 3)
                     {
-                        FeaturesAdmin();
+                        Admin newAdmin = new Admin(2, "Jens", "Hansen", new DateTime(1982 / 10 / 08), "Intern");
+                        newAdmin.FeaturesAdmin();
                         featureChoice = int.Parse(Console.ReadLine());
                         switch (featureChoice)
                         {
                             case 1:
-                                Console.WriteLine("Test");
+                                newAdmin.ListAllCases();
                                 break;
                             case 2:
-                                ListOfAppointments();
+                                newAdmin.ListOfAppointments();
                                 break;
                         }
                     }
@@ -169,26 +129,27 @@ namespace FinalProjectCBSExam
                 {
                     while (featureChoice != 5)
                     {
-                        FeaturesReceptionist();
+                        Receptionist newReceptionist = new Receptionist(3, "Mie", "Jensen", new DateTime(1981 / 10 / 01));
+                        newReceptionist.FeaturesReceptionist();
                         featureChoice = int.Parse(Console.ReadLine());
                         switch (featureChoice)
                         {
                             case 1:
-                                AddNewClient();
+                                newReceptionist.AddNewClient();
                                 break;
                             case 2:
-                                ListOfClients();
+                                newReceptionist.ListOfClients();
                                 break;
                             case 3:
-                                AddNewAppointment();
+                                newReceptionist.AddNewAppointment();
                                 break;
                             case 4:
-                                ListOfAppointments();
+                                newReceptionist.ListOfAppointments();
                                 break;
                         }
                     }
                 }
-            } */
+            } 
         }
 
     }

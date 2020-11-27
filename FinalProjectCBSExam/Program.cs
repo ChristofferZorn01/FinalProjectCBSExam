@@ -6,18 +6,8 @@ namespace FinalProjectCBSExam
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            /* yo */ 
-
-            // yo yo 
-
-            // Test no. 3
-
-            // yoyo
-
-            // vincent yo
-
-            // test123
+            Processor objP = new Processor();
+            objP.AppProcessor();
         }
     }
 }

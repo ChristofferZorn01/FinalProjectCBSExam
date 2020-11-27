@@ -10,7 +10,7 @@ namespace FinalProjectCBSExam
         }
 
         // Method to show the possible user features for Admin.
-        public static void FeaturesAdmin()
+        public void FeaturesAdmin()
         {
             Console.WriteLine("Which feature do you want to perform?\n1. List all cases\n2. List all appointments\n3. Quit application");
         }
