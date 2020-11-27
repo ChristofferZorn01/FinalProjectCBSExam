@@ -25,19 +25,74 @@ namespace FinalProjectCBSExam
 
             Console.WriteLine("\n*** ENTER CLIENT DATA BELOW ***\n");
             Console.WriteLine("Client ID: ");
-            clientId = int.Parse(Console.ReadLine());
+            try
+            {
+                clientId = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer. \nPlease try again ");
+                clientId = int.Parse(Console.ReadLine());
+            }
+            
             Console.WriteLine("First name: ");
-            firstName = Console.ReadLine();
+            try
+            {
+                firstName = Console.ReadLine();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                firstName = Console.ReadLine();
+            }
+
             Console.WriteLine("Last name: ");
-            lastName = Console.ReadLine();
+            try
+            {
+                lastName = Console.ReadLine();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                lastName = Console.ReadLine();
+            }
+         
             Console.WriteLine("Case type (Corporate = 0 | Family = 1 | Criminal = 2): ");
             caseType = (ESpecialization)int.Parse(Console.ReadLine());
+
             Console.WriteLine("Street address: ");
-            street = Console.ReadLine();
+            try
+            {
+                street = Console.ReadLine();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                street = Console.ReadLine();
+            }
+            
             Console.WriteLine("Zip code: ");
-            zipCode = int.Parse(Console.ReadLine());
+            try
+            {
+                zipCode = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer. \nPlease try again ");
+                zipCode = int.Parse(Console.ReadLine());
+            }
+            
             Console.WriteLine("City: ");
-            city = Console.ReadLine();
+            try
+            {
+                city = Console.ReadLine();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                city = Console.ReadLine();
+            }
+            
 
             Client newClient = new Client(clientId, firstName, lastName, caseType, street, zipCode, city);
             clientList.Add(newClient);

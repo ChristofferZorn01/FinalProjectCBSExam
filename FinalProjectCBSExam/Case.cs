@@ -9,10 +9,10 @@ namespace FinalProjectCBSExam
         int ClientId { get; set; }
         ESpecialization CaseType { get; set; }
         DateTime StartDate { get; set; }
-        int TotalCharges { get; set; }
+        double TotalCharges { get; set; }
         int LawyerId { get; set; }
 
-        public Case(int caseId, int clientId, int lawyerId, ESpecialization caseType, DateTime startDate, int totalCharges)
+        public Case(int caseId, int clientId, int lawyerId, ESpecialization caseType, DateTime startDate, double totalCharges)
         {
             CaseId = caseId;
             ClientId = clientId;
