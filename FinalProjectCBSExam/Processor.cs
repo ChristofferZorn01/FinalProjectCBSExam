@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using FinalProject_Individual;
 
 namespace FinalProjectCBSExam
 {
-    public class Processor
+    public class Processor : IProcessor
     {
         // Variables 
         private string Username;
@@ -25,7 +26,7 @@ namespace FinalProjectCBSExam
         }
 
         // Method to greet the user based on the time of the day the application is accessed.
-        public static string TimeBasedGreeting()
+        public string TimeBasedGreeting()
         {
             DateTime now = DateTime.Now;
             int nowHours = now.Hour;
@@ -84,7 +85,7 @@ namespace FinalProjectCBSExam
                 {
                     while (featureChoice != 4)
                     {
-                        Lawyer newLawyer = new Lawyer(1, "John", "Doe", new DateTime(1980 / 10 / 10), 10, ESpecialization.Coporate, new DateTime(2010 / 01 / 01));
+                        Lawyer newLawyer = new Lawyer(1, "John", "Doe", new DateTime(1980 / 10 / 10), 10, ESpecialization.Corporate, new DateTime(2010 / 01 / 01));
                         newLawyer.FeaturesLawyer();
                         featureChoice = int.Parse(Console.ReadLine());
                         switch (featureChoice)

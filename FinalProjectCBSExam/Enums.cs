@@ -9,6 +9,6 @@ namespace FinalProjectCBSExam
 
     public enum EMeetingRoom
     {
-        Aquarium = 0, Cube = 1, Cave = 2
+        Aquarium = 1, Cube = 2, Cave = 3
     }
 }

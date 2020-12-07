@@ -5,7 +5,7 @@ namespace FinalProjectCBSExam
 {
     public abstract class EmployeeClass
     {
-        int Id { get; set; }
+        public int Id { get; set; }
         string FirstName { get; set; }
         string LastName { get; set; }
         DateTime DateJoined { get; set; }
