@@ -19,7 +19,10 @@ namespace FinalProjectCBSExam
         {
             Console.WriteLine($"*** {TimeBasedGreeting()}! Welcome to the administration system of LegalX! ***\n");
             Console.WriteLine("What employee type are you?\n1. Lawyer\n2. Admin\n3. Receptionist");
-            userInput = int.Parse(Console.ReadLine());
+            while (!int.TryParse(Console.ReadLine(), out userInput))
+            {
+                Console.WriteLine("*** ERROR *** | Input must be an integer.\nPlease try again: ");
+            }
         }
 
         // Method to greet the user based on the time of the day the application is accessed.
@@ -149,7 +152,17 @@ namespace FinalProjectCBSExam
                         }
                     }
                 }
-            } 
+            }
+            else
+            {
+                while (userInput != 1 | userInput != 2 | userInput != 3)
+                {
+                    Console.WriteLine("\nThis is an invalid employee type. Choose either 1, 2, or 3: \n");
+                    AppProcessor();
+                    userInput = int.Parse(Console.ReadLine());
+                }
+                
+            }
         }
 
     }
