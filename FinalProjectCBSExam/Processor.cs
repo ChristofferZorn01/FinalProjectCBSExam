@@ -63,16 +63,18 @@ namespace FinalProjectCBSExam
             Console.WriteLine("\nPlease provide password: ");
             Password = Console.ReadLine();
 
-            if (Username == UserNameInSystem && Password == PasswordInSystem)
+            while(Username != UserNameInSystem || Password != PasswordInSystem)
             {
-                Console.WriteLine("\n*** Access granted ***\n");
-                return true;
+                Console.WriteLine("\nYou are not authorized to access this system. Please contact an administrator or try again: ");
+                Console.WriteLine("\nPlease provide username: ");
+                Username = Console.ReadLine();
+                Console.WriteLine("\nPlease provide password: ");
+                Password = Console.ReadLine();
             }
-            else
-            {
-                Console.WriteLine("You are not authorized to access this system. Please contact an administrator.");
-                return false;
-            }
+            Console.WriteLine("\n*** ACCES GRANTED ***\n");
+            return true;
+
+            
         }
 
 

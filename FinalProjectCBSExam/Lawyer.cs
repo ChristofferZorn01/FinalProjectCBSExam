@@ -106,6 +106,7 @@ namespace FinalProjectCBSExam
             {
                 Console.WriteLine("*** ERROR *** | Input must be an integer.\nPlease try again: ");
             }
+
             /*try
             {
                  caseId = int.Parse(Console.ReadLine());
