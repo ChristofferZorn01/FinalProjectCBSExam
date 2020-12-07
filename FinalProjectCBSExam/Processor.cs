@@ -70,7 +70,7 @@ namespace FinalProjectCBSExam
             }
             else
             {
-                Console.WriteLine("You are not authorized to access this system. Please contact an administrator");
+                Console.WriteLine("You are not authorized to access this system. Please contact an administrator.");
                 return false;
             }
         }

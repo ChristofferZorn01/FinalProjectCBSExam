@@ -154,7 +154,7 @@ namespace FinalProjectCBSExam
             // NEW
             while (lawyerId == 0 || lawyerId > 26)
             {
-                Console.WriteLine("Invalid ID. Please try again");
+                Console.WriteLine("Invalid ID. Please try again: ");
                 lawyerId = int.Parse(Console.ReadLine());
             }
 
@@ -163,7 +163,7 @@ namespace FinalProjectCBSExam
             caseType = (ESpecialization)int.Parse(Console.ReadLine());
             while (caseType != ESpecialization.Corporate && caseType != ESpecialization.CriminalCase && caseType != ESpecialization.FamilyCase)
             {
-                Console.WriteLine("Invalid. Please try again");
+                Console.WriteLine("Invalid. Please try again: ");
                 caseType = (ESpecialization)int.Parse(Console.ReadLine());
             }
 
@@ -174,7 +174,7 @@ namespace FinalProjectCBSExam
                 {
                     while (lawyer.SpecializationArea != caseType)
                     {
-                        Console.WriteLine($"This case type does not correspond with the lawyer's (ID = {lawyerId}) specialization area ({lawyer.SpecializationArea}). Please try again");
+                        Console.WriteLine($"This case type does not correspond with the lawyer's (ID = {lawyerId}) specialization area ({lawyer.SpecializationArea}). Please try again: ");
                         caseType = (ESpecialization)int.Parse(Console.ReadLine());
                     }
                 }

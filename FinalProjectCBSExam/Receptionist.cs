@@ -43,7 +43,7 @@ namespace FinalProjectCBSExam
             {
                 while (firstName.Contains(s))
                 {
-                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again: ");
                     firstName = Console.ReadLine();
                 }
             }
@@ -54,7 +54,7 @@ namespace FinalProjectCBSExam
             {
                 while (lastName.Contains(s))
                 {
-                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again: ");
                     lastName = Console.ReadLine();
                 }
             }
@@ -63,7 +63,7 @@ namespace FinalProjectCBSExam
             caseType = (ESpecialization)int.Parse(Console.ReadLine());
             while (caseType != ESpecialization.Corporate && caseType != ESpecialization.CriminalCase && caseType != ESpecialization.FamilyCase)
             {
-                Console.WriteLine("Invalid. Please try again");
+                Console.WriteLine("Invalid. Please try again: ");
                 caseType = (ESpecialization)int.Parse(Console.ReadLine());
             }
 
@@ -73,7 +73,7 @@ namespace FinalProjectCBSExam
             {
                 while (street.Contains(s))
                 {
-                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again: ");
                     street = Console.ReadLine();
                 }
             }
@@ -90,7 +90,7 @@ namespace FinalProjectCBSExam
             {
                 while (city.Contains(s))
                 {
-                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again ");
+                    Console.WriteLine("*** ERROR *** | Input must be a string. \nPlease try again: ");
                     city = Console.ReadLine();
                 }
             }
