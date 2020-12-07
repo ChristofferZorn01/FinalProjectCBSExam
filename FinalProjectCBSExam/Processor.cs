@@ -14,9 +14,6 @@ namespace FinalProjectCBSExam
         private int userInput;
         private int featureChoice;
 
-        // Lists
-        List<Client> clientList = new List<Client>();
-
         // Starting Screen with user prompts
         public void StartScreen()
         {
