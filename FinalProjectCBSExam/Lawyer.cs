@@ -20,6 +20,7 @@ namespace FinalProjectCBSExam
             SpecializationArea = specializationArea;
         }
 
+        // Requirement for project is to have 21 junior lawyers and 5 senior lawyers. List is needed for bonus question.
         private static void AddNewLawyer()
         {
             // 21 Junior Lawyers

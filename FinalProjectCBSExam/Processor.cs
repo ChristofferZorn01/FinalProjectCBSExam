@@ -58,26 +58,25 @@ namespace FinalProjectCBSExam
 
         public bool LoginSystem()
         {
+            
             Console.WriteLine("\nPlease provide username: ");
             Username = Console.ReadLine();
             Console.WriteLine("\nPlease provide password: ");
             Password = Console.ReadLine();
 
-            while(Username != UserNameInSystem || Password != PasswordInSystem)
+            while (Username != UserNameInSystem || Password != PasswordInSystem)
             {
-                Console.WriteLine("\nYou are not authorized to access this system. Please contact an administrator or try again: ");
-                Console.WriteLine("\nPlease provide username: ");
-                Username = Console.ReadLine();
-                Console.WriteLine("\nPlease provide password: ");
-                Password = Console.ReadLine();
+                    Console.WriteLine("\nYou are not authorized to access this system. Please contact an administrator or try again: ");
+                    Console.WriteLine("\nPlease provide username: ");
+                    Username = Console.ReadLine();
+                    Console.WriteLine("\nPlease provide password: ");
+                    Password = Console.ReadLine();
             }
             Console.WriteLine("\n*** ACCES GRANTED ***\n");
             return true;
-
-            
         }
 
-
+        
         public void AppProcessor()
         {
             StartScreen();
@@ -155,11 +154,11 @@ namespace FinalProjectCBSExam
             }
             else
             {
-                while (userInput != 1 | userInput != 2 | userInput != 3)
+                while (userInput != 1 && userInput != 2 && userInput != 3)
                 {
                     Console.WriteLine("\nThis is an invalid employee type. Choose either 1, 2, or 3: \n");
-                    AppProcessor();
-                    userInput = int.Parse(Console.ReadLine());
+                    ///AppProcessor();
+                    ///userInput = int.Parse(Console.ReadLine());
                 }
                 
             }

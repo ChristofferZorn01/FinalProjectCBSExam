@@ -11,7 +11,12 @@ namespace FinalProjectCBSExam
         {
         }
 
-        Receptionist receptionist1 = new Receptionist(1, "John", "Doe", new DateTime(1980 / 10 / 10));
+        // Requirement for project is to have 1 receptionist.
+        public void AddNewReceptionist()
+        {
+            Receptionist receptionist1 = new Receptionist(1, "John", "Doe", new DateTime(1980 / 10 / 10));
+        }
+
         // Method to show the possible user features for Receptionist.
         public void FeaturesReceptionist()
         {

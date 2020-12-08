@@ -9,9 +9,14 @@ namespace FinalProjectCBSExam
             Role = role;
         }
 
-        Admin admin1 = new Admin(1, "John", "Doe", new DateTime(1980 / 10 / 10), "Admin");
-        Admin admin2 = new Admin(2, "John", "Hansen", new DateTime(1981 / 9 / 10), "Co-Admin");
-        Admin admin3 = new Admin(3, "John", "Jensen", new DateTime(1982 / 15 / 10), "Intern");
+        // Requirement for project is to have 3 admin. staff members.
+        public void AddNewAdmins()
+        {
+            Admin admin1 = new Admin(1, "John", "Doe", new DateTime(1980 / 10 / 10), "Admin");
+            Admin admin2 = new Admin(2, "John", "Hansen", new DateTime(1981 / 9 / 10), "Co-Admin");
+            Admin admin3 = new Admin(3, "John", "Jensen", new DateTime(1982 / 15 / 10), "Intern");
+        }
+       
 
         // Method to show the possible user features for Admin.
         public void FeaturesAdmin()
