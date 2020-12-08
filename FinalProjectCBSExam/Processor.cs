@@ -157,8 +157,8 @@ namespace FinalProjectCBSExam
                 while (userInput != 1 && userInput != 2 && userInput != 3)
                 {
                     Console.WriteLine("\nThis is an invalid employee type. Choose either 1, 2, or 3: \n");
-                    ///AppProcessor();
-                    ///userInput = int.Parse(Console.ReadLine());
+                    AppProcessor();
+                    userInput = int.Parse(Console.ReadLine());
                 }
                 
             }

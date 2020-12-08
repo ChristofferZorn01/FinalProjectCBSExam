@@ -30,7 +30,7 @@ namespace FinalProjectCBSExam
             textOutput.AppendLine($"\nLawyer ID: {LawyerId}");
             textOutput.AppendLine($"\nCase date: {Date}");
             textOutput.AppendLine($"\nMeeting room: {MeetingRoom}");
-            textOutput.AppendLine($"\nMeetingParticipants{MeetingParticipants}");
+            textOutput.AppendLine($"\nNumber of meeting participants: {MeetingParticipants}");
             return textOutput.ToString();
         }
     }

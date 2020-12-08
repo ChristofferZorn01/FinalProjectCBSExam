@@ -170,7 +170,7 @@ namespace FinalProjectCBSExam
             }
             else if (meetingRoom == EMeetingRoom.Cube)
             {
-                while (meetingParticipants < 0 || meetingParticipants < 10)
+                while (meetingParticipants < 0 || meetingParticipants > 10)
                 {
                     Console.WriteLine($"*** ERROR *** | This meeting room ({EMeetingRoom.Cube}) has a maximum capacity of 10.\nPlease try again: ");
                     meetingParticipants = int.Parse(Console.ReadLine());
@@ -178,7 +178,7 @@ namespace FinalProjectCBSExam
             }
             else if (meetingRoom == EMeetingRoom.Cave)
             {
-                while (meetingParticipants < 0 || meetingParticipants < 8)
+                while (meetingParticipants < 0 || meetingParticipants > 8)
                 {
                     Console.WriteLine($"*** ERROR *** | This meeting room ({EMeetingRoom.Cave}) has a maximum capacity of 8.\nPlease try again: ");
                     meetingParticipants = int.Parse(Console.ReadLine());
