@@ -193,7 +193,7 @@ namespace FinalProjectCBSExam
 
         public void ListOfClients()
         {
-            foreach (object client in caseList)
+            foreach (object client in clientList)
             {
                 Console.WriteLine(client);
             }
